@@ -1,0 +1,33 @@
+{
+  "name": "dsh-snapshots",
+  "version": "0.1.0",
+  "description": "Local zero-token restore points for DeepSeek Harness: a shadow git repository, /snap, /snapshots and /rollback, plus automatic snapshots before mutating tool calls.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "snapshot",
+    "rollback",
+    "git"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

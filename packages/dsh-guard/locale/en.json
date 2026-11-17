@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Guard",
+    "description": "Deterministic path guard: refuses destructive tool calls on protected paths and asks before history-rewriting git commands. Uses no model calls.",
+    "detail": "docs/DETAIL.md"
+  }
+}

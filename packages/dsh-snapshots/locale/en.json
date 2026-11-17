@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Snapshots",
+    "description": "Local restore points in a shadow git repository: /snap, /snapshots, /rollback, plus an automatic snapshot before mutating tool calls. No model calls, no network.",
+    "detail": "docs/DETAIL.md"
+  }
+}

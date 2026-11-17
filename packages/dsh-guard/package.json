@@ -1,0 +1,33 @@
+{
+  "name": "dsh-guard",
+  "version": "0.1.0",
+  "description": "Deterministic path guard for DeepSeek Harness: refuses destructive tool calls on paths you mark as protected, and asks before history-rewriting git commands.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "safety",
+    "guard",
+    "sandbox"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
