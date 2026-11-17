@@ -51,7 +51,29 @@
 Авто-снапшоты перед `rm`/`mv`/`write`/`edit` идут с кулдауном, чтобы не тормозить работу.
 Подробности — [packages/dsh-snapshots/docs/DETAIL.md](packages/dsh-snapshots/docs/DETAIL.md).
 
+## Установка из своего индекса
+
+В репозитории лежит [index.json](index.json) — индекс рынка плагинов DSH (формат 1, проверен
+штатным парсером `@deepseek-ai/dsh-plugin-market-index`). В DSH: **Плагины → Discover → источники
+рынка → добавить URL**:
+
+```
+https://raw.githubusercontent.com/gimartynov/dsh-safety/main/index.json
+```
+
+После этого `dsh-guard` и `dsh-snapshots` ставятся из интерфейса как обычные плагины рынка.
+Ссылки-спеки для ручной установки:
+
+```
+git+https://github.com/gimartynov/dsh-safety.git#<commit>&path:/packages/dsh-guard
+git+https://github.com/gimartynov/dsh-safety.git#<commit>&path:/packages/dsh-snapshots
+```
+
+`commit` — полный 40-символьный SHA; актуальный указан в `index.json`. При выпуске новой версии
+сначала коммитятся пакеты, затем в `index.json` обновляются `version`, `commit` и `publishTimestamp`.
+
 ## Установка
+
 
 ```bash
 dsh plugin add /path/to/packages/dsh-guard

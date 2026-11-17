@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "title": {
+    "en": "dsh-safety",
+    "ru": "dsh-safety"
+  },
+  "description": {
+    "en": "Zero-token safety plugins for DeepSeek Harness: a deterministic path guard and local git restore points.",
+    "ru": "Бесплатные (0 токенов) плагины безопасности для DeepSeek Harness: детерминированный запрет на запись в защищённые пути и локальные точки восстановления."
+  },
+  "plugins": [
+    {
+      "name": "dsh-guard",
+      "title": {
+        "en": "dsh-guard",
+        "ru": "dsh-guard"
+      },
+      "description": {
+        "en": "Denies agent writes and deletions inside paths you mark as protected, and asks before history-rewriting git commands. No model calls.",
+        "ru": "Запрещает агенту писать и удалять внутри помеченных вами путей и спрашивает подтверждение перед командами, переписывающими историю git. Без вызовов модели."
+      },
+      "author": "gimartynov",
+      "homepage": "https://github.com/gimartynov/dsh-safety",
+      "repository": {
+        "url": "https://github.com/gimartynov/dsh-safety",
+        "directory": "packages/dsh-guard"
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794910761,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/gimartynov/dsh-safety",
+            "commit": "a45e3cedf8db79dcaf21b36cdd08222f686218f2",
+            "path": "packages/dsh-guard"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-snapshots",
+      "title": {
+        "en": "dsh-snapshots",
+        "ru": "dsh-snapshots"
+      },
+      "description": {
+        "en": "Local shadow-git restore points with /snap, /snapshots and /rollback, plus an automatic snapshot before mutating tool calls. No model calls.",
+        "ru": "Локальные точки восстановления в теневом git: /snap, /snapshots, /rollback и авто-снимок перед изменяющими вызовами. Без вызовов модели."
+      },
+      "author": "gimartynov",
+      "homepage": "https://github.com/gimartynov/dsh-safety",
+      "repository": {
+        "url": "https://github.com/gimartynov/dsh-safety",
+        "directory": "packages/dsh-snapshots"
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794910761,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/gimartynov/dsh-safety",
+            "commit": "a45e3cedf8db79dcaf21b36cdd08222f686218f2",
+            "path": "packages/dsh-snapshots"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.0"
+          }
+        }
+      ]
+    }
+  ]
+}
